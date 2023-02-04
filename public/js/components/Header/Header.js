@@ -1,12 +1,12 @@
 import Component from "../Component/Component.js";
 export default class Header extends Component {
-    #logo;
-    constructor(text, parentElement, cssClasses = "") {
-        super(parentElement, "header", cssClasses);
-        this.#logo = text;
+    #text;
+    constructor(parentElement, text) {
+        super(parentElement, "header");
+        this.#text = text;
     }
     render() {
         super.render();
-        this.element.innerHTML = `<h1><img src ="${this.#logo}"</h1>`;
+        this.domElement.innerHTML = `<h1>${this.#text}<h1>`;
     }
 }
