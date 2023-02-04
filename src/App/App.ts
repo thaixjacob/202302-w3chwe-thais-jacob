@@ -4,7 +4,7 @@ import Header from "../components/Header/Header.js";
 export default class App extends Component {
   #header: Header;
   constructor(parentElement: HTMLElement | undefined) {
-    super(parentElement, "app-container", "div");
+    super(parentElement, "app-container", "main");
     this.#header = new Header(this.domElement, "./assets/pokedex-logo.png");
   }
 
