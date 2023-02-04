@@ -2,7 +2,7 @@ import Component from "../Component/Component.js";
 export default class Header extends Component {
     #logo;
     constructor(parentElement, text) {
-        super(parentElement, "header");
+        super(parentElement, "logo-container");
         this.#logo = text;
     }
     render() {
