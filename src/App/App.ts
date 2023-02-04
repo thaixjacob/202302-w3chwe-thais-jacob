@@ -1,4 +1,5 @@
 import Component from "../components/Component/Component.js";
+import Header from "../components/Header/Header.js";
 export default class App extends Component {
   #header: Header;
 
