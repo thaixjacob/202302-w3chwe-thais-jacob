@@ -5,7 +5,7 @@ export default class App extends Component {
   #header: Header;
   constructor(parentElement: HTMLElement | undefined) {
     super(parentElement, "app-container", "div");
-    this.#header = new Header(this.domElement, "./assets/pokemon-logo.svg");
+    this.#header = new Header(this.domElement, "./assets/pokedex-logo.svg");
   }
 
   render(): void {
