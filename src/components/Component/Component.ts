@@ -1,18 +1,20 @@
-export default class Component {
-  #parentElement: HTMLElement | undefined;
-  protected element: HTMLElement;
+import type ComponentStructure from "../types.js";
+
+class Component implements ComponentStructure {
+  domElement: HTMLElement;
 
   constructor(
-    parentElement: HTMLElement | undefined,
-    tag: string,
-    cssClasses = ""
+    private readonly parentElement: HTMLElement,
+    className: string,
+    tag = "div"
   ) {
-    this.#parentElement = parentElement;
-    this.element = document.createElement(tag);
-    this.element.className = cssClasses;
+    this.domElement = document.createElement(tag);
+    this.domElement.className = className;
   }
 
-  render() {
-    this.#parentElement?.appendChild(this.element);
+  render(): void {
+    this.parentElement.appendChild(this.domElement);
   }
 }
+
+export default Component;
