@@ -1,3 +1,3 @@
-import App from "./components/Component/Component.js";
+import App from "./App/App.js";
 const app = new App(document.body);
 app.render();
