@@ -9,7 +9,8 @@ export default class App extends Component {
         this.#header = new Header(this.domElement, "./assets/pokedex-logo.png");
         this.#childrenButton = [
             new Button("Back", "button", "nes-btn", this.domElement),
-            new Button("Next", "button", "nes-btn is-primary", this.domElement),
+            new Button("Next", "button", "nes-btn", this.domElement),
+            new Button("My favorites", "button", "nes-btn is-primary", this.domElement),
         ];
     }
     render() {
