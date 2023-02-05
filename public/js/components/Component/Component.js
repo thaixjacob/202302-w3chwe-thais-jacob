@@ -1,7 +1,7 @@
 class Component {
     parentElement;
     domElement;
-    constructor(parentElement, className, tag = "article") {
+    constructor(parentElement, className, tag = "div") {
         this.parentElement = parentElement;
         this.domElement = document.createElement(tag);
         this.domElement.className = className;
